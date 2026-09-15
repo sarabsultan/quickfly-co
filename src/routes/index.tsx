@@ -208,11 +208,11 @@ function Home() {
 
       {/* Hero */}
       <section id="home" className="relative overflow-hidden pt-28">
-        <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0">
           <img src={HERO_IMAGE} alt="" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-primary/85" />
         </div>
-        <div className="mx-auto max-w-7xl px-5 pb-16 pt-14 md:pb-24 md:pt-20">
+        <div className="relative z-10 mx-auto max-w-7xl px-5 pb-16 pt-14 md:pb-24 md:pt-20">
           <div className="qf-rise max-w-3xl text-primary-foreground">
             <span className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
               Travel Smart , Fly Quick!
