@@ -146,59 +146,52 @@ function Section({
   );
 }
 
-function BookingWidget() {
-  const [form, setForm] = useState({ from: "Erbil (EBL)", to: "", depart: "", ret: "", travelers: "1 Adult" });
-
+function TripInquiryCTA() {
   const message = encodeURIComponent(
-    `Hello QuickFly! I'd like to search a trip.\nFrom: ${form.from || "-"}\nTo: ${form.to || "-"}\nDeparture: ${
-      form.depart || "-"
-    }\nReturn: ${form.ret || "-"}\nTravelers: ${form.travelers}`,
+    "Hello QuickFly! I'm planning a trip and would like your help with the details.",
   );
 
-  const field = "w-full rounded-xl border border-border bg-card px-4 py-3 text-sm text-foreground outline-none focus:border-accent";
-
   return (
-    <div id="booking" className="scroll-mt-28 rounded-3xl border border-border bg-card p-5 shadow-[0_30px_80px_-50px_rgba(11,37,69,0.7)] md:p-7">
-      <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-5">
-        <label className="block">
-          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-muted-foreground">From</span>
-          <input className={field} value={form.from} onChange={(e) => setForm({ ...form, from: e.target.value })} placeholder="Erbil" />
-        </label>
-        <label className="block">
-          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-muted-foreground">To</span>
-          <input className={field} value={form.to} onChange={(e) => setForm({ ...form, to: e.target.value })} placeholder="Dubai" />
-        </label>
-        <label className="block">
-          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-muted-foreground">Departure</span>
-          <input type="date" className={field} value={form.depart} onChange={(e) => setForm({ ...form, depart: e.target.value })} />
-        </label>
-        <label className="block">
-          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-muted-foreground">Return</span>
-          <input type="date" className={field} value={form.ret} onChange={(e) => setForm({ ...form, ret: e.target.value })} />
-        </label>
-        <label className="block">
-          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-muted-foreground">Travelers</span>
-          <select className={field} value={form.travelers} onChange={(e) => setForm({ ...form, travelers: e.target.value })}>
-            {["1 Adult", "2 Adults", "3 Adults", "Family (4+)", "Group (8+)"].map((t) => (
-              <option key={t}>{t}</option>
-            ))}
-          </select>
-        </label>
+    <div
+      id="booking"
+      className="scroll-mt-28 overflow-hidden rounded-3xl border border-white/60 bg-card/95 p-6 shadow-[0_40px_90px_-50px_rgba(11,37,69,0.8)] backdrop-blur-xl md:p-9"
+    >
+      <div className="flex flex-col gap-7 md:flex-row md:items-center md:justify-between">
+        <div className="max-w-xl">
+          <span className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-accent">
+            <Sparkles className="h-3.5 w-3.5" /> Personal travel assistance from QuickFly
+          </span>
+          <h2 className="mt-4 font-display text-2xl font-extrabold text-foreground md:text-3xl">
+            Planning Your Next Trip?
+          </h2>
+          <p className="mt-3 text-sm text-muted-foreground md:text-base">
+            Tell us where you want to go and our team will help you arrange the details.
+          </p>
+          <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-primary/70">
+            Flights • Hotels • Car Rental • Holiday Packages
+          </p>
+        </div>
+        <div className="flex w-full flex-col gap-3 sm:flex-row md:w-auto md:flex-col md:min-w-[260px]">
+          <a
+            href={`${WA1}?text=${message}`}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3.5 text-sm font-bold text-accent-foreground transition-transform hover:scale-[1.02]"
+          >
+            <Phone className="h-4 w-4" /> Chat With Us on WhatsApp
+          </a>
+          <a
+            href="#services"
+            className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl border border-primary/20 px-6 py-3.5 text-sm font-semibold text-primary transition-colors hover:bg-primary/5"
+          >
+            Explore Our Services <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
       </div>
-      <a
-        href={`${WA1}?text=${message}`}
-        target="_blank"
-        rel="noreferrer"
-        className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3.5 text-sm font-bold text-accent-foreground transition-transform hover:scale-[1.01] md:w-auto"
-      >
-        <Search className="h-4 w-4" /> Search
-      </a>
-      <p className="mt-3 text-xs text-muted-foreground">
-        Your search is sent to our travel team on WhatsApp and answered personally.
-      </p>
     </div>
   );
 }
+
 
 function Home() {
   return (
