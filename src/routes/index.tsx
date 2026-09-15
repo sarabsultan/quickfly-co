@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
 import {
   Plane,
   Hotel,
@@ -15,7 +14,6 @@ import {
   Sparkles,
   ShieldCheck,
   Compass,
-  Search,
   ArrowRight,
 } from "lucide-react";
 import { SiteNav } from "@/components/SiteNav";
@@ -232,7 +230,7 @@ function Home() {
             </div>
           </div>
           <div className="mt-12">
-            <BookingWidget />
+            <TripInquiryCTA />
           </div>
         </div>
       </section>
