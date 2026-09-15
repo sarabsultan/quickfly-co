@@ -81,7 +81,7 @@ const destinations = [
   { name: "Dubai", note: "Skylines, desert safaris & luxury", src: img("photo-1512453979798-5ea266f8880c") },
   { name: "Istanbul", note: "Where two continents meet", src: img("photo-1524231757912-21f4fe3a7200") },
   { name: "Paris", note: "Timeless romance and elegance", src: img("photo-1502602898657-3e91760cbb34") },
-  { name: "Cappadocia", note: "Sunrise balloons over fairy chimneys", src: img("photo-1570939274717-7eda259b50ed") },
+  { name: "Cappadocia", note: "Sunrise balloons over fairy chimneys", src: img("photo-1605281317010-fe5ffe798166") },
   { name: "Bali", note: "Rice terraces, temples & surf", src: img("photo-1537996194471-e657df975ab4") },
   { name: "Switzerland", note: "Alpine peaks and glacier trains", src: img("photo-1530122037265-a5f1f91d3b99") },
   { name: "Santorini", note: "White cliffs above the Aegean", src: img("photo-1570077188670-e3a8d69ac5ff") },
