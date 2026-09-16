@@ -14,7 +14,7 @@ Key sections and features:
 6. Why QuickFly: "Why Travel With QuickFly?" highlighting Personalized Service, Travel Made Simple, Reliable Assistance, Local Expertise (Erbil-based).
 7. Travel Inspiration Gallery: "Places Worth Dreaming About" magazine-style visual layout.
 8. About Us & Team: "Meet QuickFly" featuring Omer Sultan (Chief Executive Officer) and Sarab Sultan (Travel & Customer Support).
-9. Location & Contact: Bakhtiari District, Erbil, Iraq, interactive address/map card, WhatsApp buttons linking directly to https://wa.me/9647509757042 (07509757042) and https://wa.me/9647509577041 (07509577041), subtle floating WhatsApp button.
+9. Location & Contact: Bakhtiari District, Erbil, Iraq, interactive address/map card, WhatsApp buttons linking directly to https://wa.me/9647509757042 (07509757042) and https://wa.me/9647509577041 (07509577041), email sales@quickfly.co, subtle floating WhatsApp button.
 10. Social Links: Instagram (@quickfly.co) and Facebook (quickfly.co).
 11. Final CTA Banner: "Your Next Destination Is Waiting."
 12. Footer: Full navigation, services list, contact info, social links, and "© 2026 QuickFly Travel & Tourism. All rights reserved."

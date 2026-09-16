@@ -28,7 +28,12 @@ export function Preloader() {
       style={{ perspective: "1000px" }}
     >
       <div className="qf-plane-stage">
-        <img src={logo.url} alt="" className="w-64 max-w-[70vw]" />
+        <img
+          src={logo.url}
+          alt=""
+          className="w-64 max-w-[70vw]"
+          onError={(e) => ((e.currentTarget as HTMLImageElement).src = "/quickfly-logo.png")}
+        />
       </div>
       <div className="mt-8 h-[3px] w-40 overflow-hidden rounded-full bg-secondary">
         <div className="qf-bar h-full w-1/3 rounded-full bg-accent" />

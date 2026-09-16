@@ -18,7 +18,6 @@ import {
 } from "lucide-react";
 import { SiteNav } from "@/components/SiteNav";
 import { Preloader } from "@/components/Preloader";
-import logo from "@/assets/quickfly-logo.png.asset.json";
 
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80";
@@ -61,6 +60,7 @@ export const Route = createFileRoute("/")({
             addressCountry: "IQ",
           },
           telephone: ["+9647509757042", "+9647509577041"],
+          email: "sales@quickfly.co",
           sameAs: ["https://instagram.com/quickfly.co", "https://facebook.com/quickfly.co"],
         }),
       },
@@ -389,7 +389,11 @@ function Home() {
                 className="flex items-center justify-between rounded-2xl bg-accent px-5 py-4 text-sm font-semibold text-accent-foreground"
               >
                 <span className="flex items-center gap-2">
+<<<<<<< HEAD
                   <Phone className="h-4 w-4" /> WhatsApp 0750 975 7042
+=======
+                  <Phone className="h-4 w-4" /> WhatsApp 0750 957 7042
+>>>>>>> 49b0d6c (Upload QuickFly website)
                 </span>
                 <ArrowRight className="h-4 w-4" />
               </a>
@@ -404,6 +408,14 @@ function Home() {
                 </span>
                 <ArrowRight className="h-4 w-4" />
               </a>
+<<<<<<< HEAD
+=======
+              <div className="mt-4">
+                <a href="mailto:sales@quickfly.co" className="text-sm font-medium text-primary hover:text-accent">
+                  sales@quickfly.co
+                </a>
+              </div>
+>>>>>>> 49b0d6c (Upload QuickFly website)
             </div>
             <div className="mt-6 flex gap-3">
               <a
@@ -455,7 +467,17 @@ function Home() {
       <footer className="bg-card px-5 py-14">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
           <div>
+<<<<<<< HEAD
             <img src={logo.url} alt="QuickFly Travel & Tourism" className="h-12 w-auto" />
+=======
+            <img
+              src="/quickfly-logo.png"
+              srcSet="/quickfly-logo.png 1x, /quickfly-logo.png 2x"
+              alt="QuickFly Travel & Tourism"
+              className="h-12 w-auto"
+              onError={(e) => ((e.currentTarget as HTMLImageElement).src = "/quickfly-logo.svg")}
+            />
+>>>>>>> 49b0d6c (Upload QuickFly website)
             <p className="mt-4 text-sm text-muted-foreground">
               Travel Smart , Fly Quick! Your trusted travel partner in Erbil, Iraq.
             </p>
@@ -486,7 +508,11 @@ function Home() {
               <li>Bakhtiari District, Erbil, Iraq</li>
               <li>
                 <a className="hover:text-accent" href={WA1} target="_blank" rel="noreferrer">
+<<<<<<< HEAD
                   0750 975 7042
+=======
+                  0750 957 7042
+>>>>>>> 49b0d6c (Upload QuickFly website)
                 </a>
               </li>
               <li>
@@ -494,6 +520,14 @@ function Home() {
                   0750 957 7041
                 </a>
               </li>
+<<<<<<< HEAD
+=======
+              <li>
+                <a className="hover:text-accent" href="mailto:sales@quickfly.co">
+                  sales@quickfly.co
+                </a>
+              </li>
+>>>>>>> 49b0d6c (Upload QuickFly website)
             </ul>
             <div className="mt-4 flex gap-3">
               <a href="https://instagram.com/quickfly.co" target="_blank" rel="noreferrer" aria-label="Instagram">
